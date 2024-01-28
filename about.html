@@ -1,0 +1,218 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css"> 
+    <style>
+       body {
+
+    font-family: 'Quicksand', sans-serif;
+    background: linear-gradient(to right, #292E49, #536976);
+    color: #dce3e7;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Set background image and transparency */
+    background-image: url('11.avif'); /* Replace 'your-background-image.jpg' with your actual image path */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Add a semi-transparent overlay on top of the background image */
+body::after {
+    content: '';
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Adjust the transparency (0.5 for 50%) */
+    z-index: -1; /* Place the overlay behind the content */
+}
+
+/* Rest of your existing styles remain unchanged */
+
+    
+        .navbar {
+            background: linear-gradient(to right, #292E49, #536976);
+            padding: 10px 0;
+            text-align: center;
+            
+        }
+    
+        .navbar-brand {
+            color: #FFD700;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+    
+        .navbar-nav {
+            margin-left: 0 auto;
+        }
+    
+        .navbar-nav .nav-item .nav-link {
+            color: #dce3e7 !important;
+            font-size: 1.2em;
+            margin-right: 10 px;
+            transition: color 0.3s ease;
+        }
+    
+      
+        .navbar-nav .nav-item .nav-link.active {
+            color: #FFD700 !important;
+        }
+
+    
+        header, footer {
+            background-color: #1C2331;
+            padding: 10px;
+            text-align: center;
+        }
+    
+        .hero {
+            background: linear-gradient(to right, #536976, #292E49);
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+        }
+    
+        .hero-content {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+    
+        .features {
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+    
+        .feature {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    
+        .feature h3 {
+            color: #FFD700;
+        }
+    
+        
+    
+     
+        
+.navbar-nav .nav-item .nav-link.active {
+    color: #FFD700 !important;
+}
+
+header, footer {
+    background-color: #1C2331;
+    padding: 10px;
+    text-align: center;
+}
+
+.page-content {
+    margin-top: 100px; /* Adjust this value based on your navbar height */
+}
+
+.about-section {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.about-section h2 {
+    color: #FFD700;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.about-section p {
+    font-size: 1.2em;
+    color: #dce3e7;
+}
+
+footer {
+    background-color: #1C2331;
+    color: #dce3e7;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+}
+
+    </style>
+    
+        
+    <!-- Link to Google Fonts (Quicksand) -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap">
+    <title>FitTrackr - Home</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <!-- Navigation Bar -->
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">FitTrackr</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                            <li class="nav-item"><a class="nav-link" href="user_stories.html">User Stories</a></li>
+                            <li class="nav-item"><a class="nav-link" href="features.html">Features</a></li>
+                            <li class="nav-item"><a class="nav-link" href="results.html">Results</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+
+
+        <section class="page-content">
+            <div class="about-section">
+                <h2>About FitTrackr</h2>
+                <p>
+                    <strong>FitTrackr is dedicated to revolutionizing your fitness journey. Our goal is to provide a seamless and personalized experience, empowering you to achieve your health and wellness goals.Fitnesstrackr, an innovative and comprehensive fitness tracking app, stands at the forefront of the health and wellness revolution, redefining the way individuals approach their fitness goals. With a user-centric design and cutting-edge features, Fitnesstrackr goes beyond conventional tracking to offer a holistic and personalized approach to health management.
+                    </strong>
+                
+                    </p>
+                <p>
+                    <strong> As users embark on their fitness journey with Fitnesstrackr, they not only gain access to a sophisticated tracking tool but also become part of a dynamic and motivating community. Fitnesstrackr is not just an app; it is a holistic wellness partner, dedicated to inspiring and supporting individuals as they strive to achieve their health and fitness aspirations. With its user-centric approach, personalized guidance, and community-driven ethos, Fitnesstrackr stands as a beacon in the realm of fitness tracking, empowering users to unlock their full potential for a healthier, happier life. We believe in making fitness accessible, enjoyable, and tailored to your unique needs. FitTrackr is more than an app; it's your companion on the path to a healthier lifestyle.
+                
+                    </strong>
+                    </p>
+            </div>
+        </section>
+
+        <footer>
+            <p style="font-size: 1.2em;">&copy; 2024 FitTrackr. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Add active class to the current navbar link based on the URL
+        var currentLocation = window.location.href;
+        var navbarLinks = document.querySelectorAll('.navbar-nav .nav-link');
+
+        navbarLinks.forEach(function (link) {
+            if (link.href === currentLocation) {
+                link.classList.add('active');
+            }
+        });
+    </script>
+</body>
+</html>

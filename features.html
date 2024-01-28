@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css"> 
+    <style>
+        body {
+            font-family: 'Quicksand', sans-serif;
+            background: linear-gradient(to right, #292E49, #536976);
+            color: #dce3e7;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    
+        .navbar {
+            background: linear-gradient(to right, #292E49, #536976);
+            padding: 10px 0;
+            text-align: center;
+            
+        }
+    
+        .navbar-brand {
+            color: #FFD700;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+    
+        .navbar-nav {
+            margin-left: 0 auto;
+        }
+    
+        .navbar-nav .nav-item .nav-link {
+            color: #dce3e7 !important;
+            font-size: 1.2em;
+            margin-right: 10px;
+            transition: color 0.3s ease;
+        }
+    
+      
+        .navbar-nav .nav-item .nav-link.active {
+            color: #FFD700 !important;
+        }
+
+    
+        header, footer {
+            background-color: #1C2331;
+            padding: 10px;
+            text-align: center;
+        }
+    
+        .hero {
+            background: linear-gradient(to right, #536976, #292E49);
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+        }
+    
+        .hero-content {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+    
+        .features {
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+    
+        .feature {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+    
+        .feature img {
+            max-width: 20%;  /* Adjust the max-width value as needed */
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+    
+        .feature-content {
+            flex-grow: 1;
+        }
+    
+        .feature h3 {
+            color: #FFD700;
+        }
+    
+        .feature p {
+            color: #dce3e7;
+            font-size: 1.2em;
+        }
+    
+       
+  
+    </style>
+    
+        
+    <!-- Link to Google Fonts (Quicksand) -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap">
+    <title>FitTrackr - Features</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <!-- Navigation Bar -->
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">FitTrackr</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                            <li class="nav-item"><a class="nav-link" href="user_stories.html">User Stories</a></li>
+                            <li class="nav-item"><a class="nav-link" href="features.html">Features</a></li>
+                            <li class="nav-item"><a class="nav-link" href="results.html">Results</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <section class="hero">
+            <div class="hero-content">
+                <h1 style="font-size: 3em;">Explore FitTrackr Features</h1>
+                <p style="font-size: 1.5em;">Discover the powerful features that will enhance your fitness journey.</p>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="feature">
+                <img src="1.webp" alt="Feature Image 1">
+                <div class="feature-content">
+                    <h3 style="font-size: 2em;">Personalized Workouts</h3>
+                    <p>Create customized workout plans tailored to your fitness goals and preferences. FitTrackr's AI-powered algorithms analyze your data to provide effective and engaging workouts.</p>
+                </div>
+            </div>
+
+            <div class="feature">
+                <img src="2.jpg" alt="Feature Image 2">
+                <div class="feature-content">
+                    <h3 style="font-size: 2em;">Real-Time Tracking</h3>
+                    <p>Monitor your activities, heart rate, and sleep patterns in real-time with seamless integration. Stay motivated with instant feedback on your progress, helping you achieve your fitness milestones.</p>
+                </div>
+            </div>
+
+            <div class="feature">
+                <img src="3.jpg" alt="Feature Image 3">
+                <div class="feature-content">
+                    <h3 style="font-size: 2em;">Community Support</h3>
+                    <p>Connect with like-minded individuals, join challenges, and share your fitness journey with the community. FitTrackr's community support ensures you stay motivated and inspired throughout your fitness adventure.</p>
+                </div>
+            </div>
+        </section>
+
+  
+
+        <footer>
+            <p style="font-size: 1.2em;">&copy; 2024 FitTrackr. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <!-- Bootstrap JS and Popper.js CDN (required for Bootstrap's JavaScript features) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Add active class to the current navbar link based on the URL
+        var currentLocation = window.location.href;
+        var navbarLinks = document.querySelectorAll('.navbar-nav .nav-link');
+
+        navbarLinks.forEach(function (link) {
+            if (link.href === currentLocation) {
+                link.classList.add('active');
+            }
+        });
+    </script>
+</body>
+</html>
